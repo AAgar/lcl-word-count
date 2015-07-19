@@ -1,0 +1,18 @@
+{
+  "name": "lcl-word-count",
+  "main": "./lib/lcl-word-count",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "lcl-word-count:toggle"
+  },
+  "repository": "https://github.com/atom/lcl-word-count",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
