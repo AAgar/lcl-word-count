@@ -8,6 +8,7 @@ module.exports = LclWordCount =
 
   activate: (state) ->
     @lclWordCountView = new LclWordCountView(state.lclWordCountViewState)
+    console.log @lclWordCountView
     @modalPanel = atom.workspace.addModalPanel(item: @lclWordCountView.getElement(), visible: false)
 
     # Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
@@ -25,8 +26,8 @@ module.exports = LclWordCount =
     lclWordCountViewState: @lclWordCountView.serialize()
 
   toggle: ->
-    
 
+    console.log "im here"
     if @modalPanel.isVisible()
       @modalPanel.hide()
     else
